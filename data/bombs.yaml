@@ -1,0 +1,721 @@
+acid flask:
+  type: acid
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 0
+      splash: 1
+      persistent: 1d6
+    3:
+      level: moderate
+      bonus: 1
+      damage: 0
+      splash: 2
+      persistent: 2d6
+    11:
+      level: greater
+      bonus: 2
+      damage: 0
+      splash: 3
+      persistent: 3d6
+    17:
+      level: major
+      bonus: 3
+      damage: 0
+      splash: 4
+      persistent: 4d6
+aether marble:
+  type: force
+  on_hit: incorporeal caltrops
+  levels:
+    4:
+      level: lesser
+      bonus: 1
+      damage: 2d6
+      splash: 2
+      persistent: 0
+    12:
+      level: moderate
+      bonus: 2
+      damage: 3d6
+      splash: 3
+      persistent: 0
+    18:
+      level: greater
+      bonus: 3
+      damage: 4d6
+      splash: 4
+      persistent: 0
+alchemist's fire:
+  type: fire
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d8
+      splash: 1
+      persistent: 1
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d8
+      splash: 2
+      persistent: 2
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d8
+      splash: 3
+      persistent: 3
+    17:
+      level: major
+      bonus: 3
+      damage: 4d8
+      splash: 4
+      persistent: 4
+blight bomb:
+  type: poison
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d6
+      splash: 1
+      persistent: 1d4
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d6
+      splash: 2
+      persistent: 2d4
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d6
+      splash: 3
+      persistent: 3d4
+    17:
+      level: major
+      bonus: 3
+      damage: 4d6
+      splash: 4
+      persistent: 4d4
+blindpepper bomb:
+  type: none
+  save:
+    type: reflex
+    failure: blinded for 1 round and then dazzled for 1 round
+    critical: blinded for 1 round, sickened 1, and dazzled while sickened
+  levels:
+    5:
+      level: moderate
+      bonus: 0
+      damage: 0
+      splash: 0
+      persistent: 0
+bottled lightning:
+  type: electricity
+  on_hit: off-guard
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d6
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d6
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d6
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d6
+      splash: 4
+      persistent: 0
+bottled sunlight:
+  type: vitality
+  additional: fire
+  levels:
+    2:
+      level: lesser
+      bonus: 0
+      damage: 1d4
+      splash: 1
+      persistent: 0
+    4:
+      level: moderate
+      bonus: 1
+      damage: 2d4
+      splash: 2
+      persistent: 0
+    12:
+      level: greater
+      bonus: 2
+      damage: 3d4
+      splash: 3
+      persistent: 0
+    18:
+      level: major
+      bonus: 3
+      damage: 4d4
+      splash: 4
+      persistent: 0
+crystal shards:
+  type: piercing
+  on_hit: caltrops
+  levels:
+    4:
+      level: moderate
+      bonus: 1
+      damage: 2d4
+      splash: 4
+      persistent: 0
+    12:
+      level: moderate
+      bonus: 2
+      damage: 3d4
+      splash: 5
+      persistent: 0
+    18:
+      level: moderate
+      bonus: 3
+      damage: 4d4
+      splash: 6
+      persistent: 0
+dread ampoule:
+  type: mental
+  on_hit: frightened 1
+  on_crit: frightened 2
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d6
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d6
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d6
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d6
+      splash: 4
+      persistent: 0
+dwarven daisy:
+  type: fire
+  save:
+    type: fortitude
+    failure: dazzled for 1 round
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d6
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 0
+      damage: 2d6
+      splash: 2
+      persistent: 0
+frost vial:
+  type: cold
+  on_hit: status penalty to speeds
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d6
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d6
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d6
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d6
+      splash: 4
+      persistent: 0
+ghost charge:
+  type: vitality
+  on_hit: enfeebled
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d8
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d8
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d8
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d8
+      splash: 4
+      persistent: 0
+goo grenade:
+  type: acid
+  on_hit: circumstance penalty to speeds
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d4
+      splash: 1
+      persistent: 1
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d4
+      splash: 2
+      persistent: 2
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d4
+      splash: 3
+      persistent: 3
+    17:
+      level: major
+      bonus: 3
+      damage: 4d4
+      splash: 4
+      persistent: 4
+necrotic bomb:
+  type: void
+  on_crit: sickened
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d6
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d6
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d6
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d6
+      splash: 4
+      persistent: 0
+pernicious spore bomb:
+  type: poison
+  on_hit: difficult terrain
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d4
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d4
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d4
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d4
+      splash: 4
+      persistent: 0
+peshpine grenade:
+  type: piercing
+  on_hit: stupefied
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d6
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d6
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d6
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d6
+      splash: 4
+      persistent: 0
+pressure bomb:
+  type: bludgeoning
+  on_hit: pushed 5 feet away
+  on_crit: prone
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d4
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d4
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d4
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d4
+      splash: 4
+      persistent: 0
+redpitch bomb:
+  type: fire
+  on_crit: clumsy
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1
+      splash: 1
+      persistent: 1d4
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2
+      splash: 2
+      persistent: 2d4
+    11:
+      level: greater
+      bonus: 2
+      damage: 3
+      splash: 3
+      persistent: 3d4
+    17:
+      level: major
+      bonus: 3
+      damage: 4
+      splash: 4
+      persistent: 4d4
+silver orb:
+  type: slashing
+  save:
+    type: fortitude
+    basic: true
+  levels:
+    5:
+      level: lesser
+      bonus: 0
+      damage: 1
+      splash: 0
+      persistent: 1d6
+    12:
+      level: moderate
+      bonus: 0
+      damage: 1
+      splash: 0
+      persistent: 3d6
+    17:
+      level: greater
+      bonus: 0
+      damage: 1
+      splash: 0
+      persistent: 5d6
+skunk bomb:
+  type: poison
+  save:
+    type: fortitude
+    success: sickened 1
+    failure: sickened 1 and slowed 1 while sickened
+    critical: blinded for 1 round, sickened 2, and slowed 1 while sickened
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d4
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d4
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d4
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d4
+      splash: 4
+      persistent: 0
+star grenade:
+  type: fire
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d8
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d8
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d8
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d8
+      splash: 4
+      persistent: 0
+sticky algae bomb:
+  type: poison
+  on_hit: highly visible in water
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d8
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d8
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d8
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d8
+      splash: 4
+      persistent: 0
+sulfur bomb:
+  type: acid
+  on_hit: status penalty to Perception checks and attack rolls
+  on_crit: sickened 1
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d4
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d4
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d4
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d4
+      splash: 4
+      persistent: 0
+tallow bomb:
+  type: fire
+  on_crit: sickened 1
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 0
+      splash: 1
+      persistent: 1d4
+    3:
+      level: moderate
+      bonus: 1
+      damage: 0
+      splash: 2
+      persistent: 2d4
+    11:
+      level: greater
+      bonus: 2
+      damage: 0
+      splash: 3
+      persistent: 3d4
+    17:
+      level: major
+      bonus: 3
+      damage: 0
+      splash: 4
+      persistent: 4d4
+tanglefoot bag:
+  type: none
+  on_hit: status penalty to speeds
+  on_crit: immobilized
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 0
+      splash: 0
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 0
+      splash: 0
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 0
+      splash: 0
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 0
+      splash: 0
+      persistent: 0
+thunderstone:
+  type: sonic
+  save:
+    type: fortitude
+    failure: deafened
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d4
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d4
+      splash: 2
+      persistent: 0
+    11:
+      level: moderate
+      bonus: 2
+      damage: 3d4
+      splash: 3
+      persistent: 0
+    17:
+      level: moderate
+      bonus: 3
+      damage: 4d4
+      splash: 4
+      persistent: 0
+vexing vapor:
+  type: mental
+  on_hit: DC 5 flat check before concentrate actions
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d6
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d6
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d6
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d6
+      splash: 4
+      persistent: 0
