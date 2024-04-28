@@ -37,12 +37,24 @@ class Variant:
     level: str
     bonus: int = 0
     damage: int|str = 0
-    splash: int = 0
+    _splash: int = 0
     persistent: int|str = 0
 
     @classmethod
     def from_dict(cls, data: dict[str, int|str]) -> Self:
-        return cls(**data)
+        return cls(
+            level=data["level"],
+            bonus=data["bonus"],
+            damage=data["damage"],
+            _splash=data["splash"],
+            persistent=data["persistent"],
+        )
+
+    @property
+    def splash(self) -> int:
+        # Calculated splash
+        return 5
+        # return self._splash
 
     @property
     def avg_dmg(self) -> float:
@@ -175,7 +187,7 @@ def read_bombs() -> dict[str, Bomb]:
 
 def parse_bomb(name: str, bomb: Bomb, level: int) -> str:
     variant = bomb.levels[level]
-    full_name = f"{name.title()} ({variant.level.title()}) [{level}] ({variant.avg_dmg} dmg)"
+    full_name = f"{name.title()} ({variant.level.title()}) [{level}] ({variant.avg_dmg:.2f} dmg)"
     return f"{full_name}\n{bomb.variant_str(level)}\n"
 
 
@@ -187,7 +199,7 @@ def main() -> None:
     try:
         search = sys.argv[1:]
     except IndexError:
-        search = []
+        search = ["-vitality"]
 
     variants: list[tuple[str, Bomb, int]] = []
     for bomb in bombs:
