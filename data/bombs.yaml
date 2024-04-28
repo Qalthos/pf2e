@@ -114,6 +114,33 @@ blindpepper bomb:
       damage: 0
       splash: 0
       persistent: 0
+blood bomb:
+  type: slashing
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 0
+      splash: 1
+      persistent: 1d6
+    3:
+      level: moderate
+      bonus: 1
+      damage: 0
+      splash: 2
+      persistent: 2d6
+    11:
+      level: greater
+      bonus: 2
+      damage: 0
+      splash: 3
+      persistent: 3d6
+    17:
+      level: major
+      bonus: 3
+      damage: 0
+      splash: 4
+      persistent: 4d6
 bottled lightning:
   type: electricity
   on_hit: off-guard
@@ -295,6 +322,35 @@ ghost charge:
       damage: 4d8
       splash: 4
       persistent: 0
+glue bomb:
+  type: null
+  on_hit: status penalty to speeds
+  on_crit: immobilized
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 0
+      splash: 0
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 0
+      splash: 0
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 0
+      splash: 0
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 0
+      splash: 0
+      persistent: 0
 goo grenade:
   type: acid
   on_hit: circumstance penalty to speeds
@@ -323,6 +379,34 @@ goo grenade:
       damage: 4d4
       splash: 4
       persistent: 4
+mud bomb:
+  type: bludgeoning
+  on_hit: dazzled
+  levels:
+    1:
+      level: lesser
+      bonus: 0
+      damage: 1d6
+      splash: 1
+      persistent: 0
+    3:
+      level: moderate
+      bonus: 1
+      damage: 2d6
+      splash: 2
+      persistent: 0
+    11:
+      level: greater
+      bonus: 2
+      damage: 3d6
+      splash: 3
+      persistent: 0
+    17:
+      level: major
+      bonus: 3
+      damage: 4d6
+      splash: 4
+      persistent: 0
 necrotic bomb:
   type: void
   on_crit: sickened
@@ -632,35 +716,6 @@ tallow bomb:
       damage: 0
       splash: 4
       persistent: 4d4
-tanglefoot bag:
-  type: none
-  on_hit: status penalty to speeds
-  on_crit: immobilized
-  levels:
-    1:
-      level: lesser
-      bonus: 0
-      damage: 0
-      splash: 0
-      persistent: 0
-    3:
-      level: moderate
-      bonus: 1
-      damage: 0
-      splash: 0
-      persistent: 0
-    11:
-      level: greater
-      bonus: 2
-      damage: 0
-      splash: 0
-      persistent: 0
-    17:
-      level: major
-      bonus: 3
-      damage: 0
-      splash: 0
-      persistent: 0
 thunderstone:
   type: sonic
   save:
